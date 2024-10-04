@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Colors and Font Styling */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            color: #403d36;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Card Styles */
+        .crop-card {
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .crop-card:hover {
+            transform: scale(1.05);
+        }
+
+        .crop-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        /* Table Styles */
+        table {
+            margin: 20px auto;
+            width: 90%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: #688f5d;
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #e8e4d9;
+            padding: 20px;
+            text-align: center;
+            color: #403d36;
+        }
+    </style>
+    <title>Crops - Krishi Yantra</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo and Brand Name -->
+            <a class="navbar-brand" href="#">
+                <img src="krishi yantra.png" alt="Krishi Yantra Logo" class="logo-img">
+                Krishi Yantra
+            </a>
+            <!-- Navbar toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#machineries">Farm Machineries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crops.html">Crops Planted</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h1>Crops Planted</h1>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Wheat Card -->
+            <div class="col-md-4">
+                <div class="crop-card">
+                    <img src="wheat.jpg" alt="Wheat" class="crop-img">
+                    <div class="card-body">
+                        <h2>Wheat</h2>
+                        <p>Wheat is one of the most widely grown crops in the world, used primarily for food. It thrives in temperate climates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rice Card -->
+            <div class="col-md-4">
+                <div class="crop-card">
+                    <img src="rice.jpg" alt="Rice" class="crop-img">
+                    <div class="card-body">
+                        <h2>Rice</h2>
+                        <p>Rice is a staple food for over half of the world's population. It requires warm weather and plenty of water.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corn Card -->
+            <div class="col-md-4">
+                <div class="crop-card">
+                    <img src="corn.jpg" alt="Corn" class="crop-img">
+                    <div class="card-body">
+                        <h2>Corn</h2>
+                        <p>Corn is a versatile crop used for food, animal feed, and biofuel. It grows best in sunny conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Daily Water and Fertilizer Requirements</h2>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Crop</th>
+                    <th>Daily Water Consumption (Liters)</th>
+                    <th>Fertilizer Requirements (kg/ha)</th>
+                    <th>Soil pH</th>
+                    <th>Harvest Period (Days)</th>
+                    <th>Cultivation Period (Days)</th>
+                    <th>Avg Cost per Seed (INR)</th>
+                    <th>Area of Cultivation (Acres)</th>
+                    <th>Yield Generated (Quintals)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wheat</td>
+                    <td>500</td>
+                    <td>120</td>
+                    <td>6.0 - 7.0</td>
+                    <td>120</td>
+                    <td>90</td>
+                    <td>2000</td>
+                    <td>2.5</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Rice</td>
+                    <td>600</td>
+                    <td>150</td>
+                    <td>5.5 - 7.0</td>
+                    <td>150</td>
+                    <td>120</td>
+                    <td>2500</td>
+                    <td>2.0</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Corn</td>
+                    <td>550</td>
+                    <td>100</td>
+                    <td>5.8 - 7.0</td>
+                    <td>90</td>
+                    <td>85</td>
+                    <td>1500</td>
+                    <td>3.0</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Krishi Yantra. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
